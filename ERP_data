@@ -1,0 +1,38 @@
+ #Physical
+
+S&P500
+-
+date datetime PK
+open float
+high float
+low float
+close float
+adj_close float
+volume int
+
+ConsumerSpendin
+-
+date datetime >- S&P500.date
+pce int PK
+
+Spending_Sentiment
+-
+date datetime >- S&P500.date
+umcsent float PK
+
+Housing
+-
+date datetime >- S&P500.date
+csushpisa float PK
+
+Unemployment
+-
+date datetime >- S&P500.date
+unrate float PK
+
+_CPI
+-
+date datetime >- S&P500.date
+cpiaucsl float
+
+

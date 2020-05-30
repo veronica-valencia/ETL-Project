@@ -1,33 +1,33 @@
  #Physical
 
-S&P500
+sp500
 -
 date datetime PK
 close float
 adj_close float
 volume int
 
-ConsumerSpendin
+spending
 -
 date datetime >- S&P500.date PK
 pce int 
 
-Spending_Sentiment
+sentiment
 -
 date datetime >- S&P500.date PK
 umcsent float 
 
-Housing
+housing
 -
 date datetime >- S&P500.date PK
 csushpisa float 
 
-Unemployment
+unemployment
 -
 date datetime >- S&P500.date PK
 unrate float 
 
-_CPI
+cpi
 -
 date datetime >- S&P500.date PK
 cpiaucsl float

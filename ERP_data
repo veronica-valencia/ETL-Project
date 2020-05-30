@@ -3,36 +3,33 @@
 S&P500
 -
 date datetime PK
-open float
-high float
-low float
 close float
 adj_close float
 volume int
 
 ConsumerSpendin
 -
-date datetime >- S&P500.date
-pce int PK
+date datetime >- S&P500.date PK
+pce int 
 
 Spending_Sentiment
 -
-date datetime >- S&P500.date
-umcsent float PK
+date datetime >- S&P500.date PK
+umcsent float 
 
 Housing
 -
-date datetime >- S&P500.date
-csushpisa float PK
+date datetime >- S&P500.date PK
+csushpisa float 
 
 Unemployment
 -
-date datetime >- S&P500.date
-unrate float PK
+date datetime >- S&P500.date PK
+unrate float 
 
 _CPI
 -
-date datetime >- S&P500.date
+date datetime >- S&P500.date PK
 cpiaucsl float
 
 
